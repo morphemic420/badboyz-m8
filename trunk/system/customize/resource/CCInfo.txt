@@ -1,0 +1,8 @@
+﻿Project: M8_WHL_L50_SENSE60_SPCS_MR
+SKU: Sprint Harman Chameleon ROM
+ROM Build ID: 996218
+Build ID: 996233; SKU: Sprint WWE Boost; CID: BOOST000; MNS: 
+Build ID: 996236; SKU: Sprint WWE; CID: SPRINT00; MNS: 
+Build ID: 996239; SKU: Sprint WWE VM; CID: VM000000; MNS: 
+Build ID: 996221; SKU: Sprint Harman Chameleon ROM default; CID: default; MNS: default
+Datetime: 2015/01/26 18:11:28

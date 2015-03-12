@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?> 
+<customizeapps> 
+<package name="HTC_Calculator.apk" type = "generic"/><package name="Calculator.apk" type = "generic"/><package name="Flashlight.apk" type = "generic"/></customizeapps> 

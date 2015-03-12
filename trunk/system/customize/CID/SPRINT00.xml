@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="system">
+    <module name="locale">
+      <function>
+        <set name="single">
+          <item name="total_list">ar_EG;bg_BG;ca_ES;cs_CZ;da_DK;de_DE;el_GR;en_US;es_US;et_EE;fa_IR;fi_FI;fr_FR;hr_HR;hu_HU;hy_AM;in_ID;it_IT;iw_IL;ja_JP;kk_KZ;ko_KR;lt_LT;lv_LV;nb_NO;nl_NL;pl_PL;pt_BR;pt_PT;ro_RO;ru_RU;sk_SK;sl_SI;sr_RS;sv_SE;th_TH;tr_TR;uk_UA;vi_VN;zh_CN;zh_TW;</item>
+          <item type="boolean" name="ar_EG">yes</item>
+          <item type="boolean" name="bg_BG">yes</item>
+          <item type="boolean" name="ca_ES">yes</item>
+          <item type="boolean" name="cs_CZ">yes</item>
+          <item type="boolean" name="da_DK">yes</item>
+          <item type="boolean" name="de_DE">yes</item>
+          <item type="boolean" name="el_GR">yes</item>
+          <item type="boolean" name="en_US">yes</item>
+          <item type="boolean" name="es_US">yes</item>
+          <item type="boolean" name="et_EE">yes</item>
+          <item type="boolean" name="fa_IR">yes</item>
+          <item type="boolean" name="fi_FI">yes</item>
+          <item type="boolean" name="fr_FR">yes</item>
+          <item type="boolean" name="hr_HR">yes</item>
+          <item type="boolean" name="hu_HU">yes</item>
+          <item type="boolean" name="hy_AM">yes</item>
+          <item type="boolean" name="in_ID">yes</item>
+          <item type="boolean" name="it_IT">yes</item>
+          <item type="boolean" name="iw_IL">yes</item>
+          <item type="boolean" name="ja_JP">yes</item>
+          <item type="boolean" name="kk_KZ">yes</item>
+          <item type="boolean" name="ko_KR">yes</item>
+          <item type="boolean" name="lt_LT">yes</item>
+          <item type="boolean" name="lv_LV">yes</item>
+          <item type="boolean" name="nb_NO">yes</item>
+          <item type="boolean" name="nl_NL">yes</item>
+          <item type="boolean" name="pl_PL">yes</item>
+          <item type="boolean" name="pt_BR">yes</item>
+          <item type="boolean" name="pt_PT">yes</item>
+          <item type="boolean" name="ro_RO">yes</item>
+          <item type="boolean" name="ru_RU">yes</item>
+          <item type="boolean" name="sk_SK">yes</item>
+          <item type="boolean" name="sl_SI">yes</item>
+          <item type="boolean" name="sr_RS">yes</item>
+          <item type="boolean" name="sv_SE">yes</item>
+          <item type="boolean" name="th_TH">yes</item>
+          <item type="boolean" name="tr_TR">yes</item>
+          <item type="boolean" name="uk_UA">yes</item>
+          <item type="boolean" name="vi_VN">yes</item>
+          <item type="boolean" name="zh_CN">yes</item>
+          <item type="boolean" name="zh_TW">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData">
+      <function>
+        <set name="single">
+          <item name="device_name">831C</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData1">
+      <function>
+        <set name="single">
+          <item name="sw_number">NA</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="customized_value">
+        <set name="single">
+          <item name="has_netsharing">true</item>
+          <item name="single_usb_tethering">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="DataUsage">
+      <function name="settings">
+        <set name="single">
+          <item name="alertEnable">false</item>
+          <item name="alertUsage">2147483648</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="application">
+    <module name="Crash_Report">
+      <function name="setting">
+        <set name="single">
+          <item name="turn_off_report" type="boolean">yes</item>
+          <item name="turn_off_application_log" type="boolean">yes</item>
+          <item name="enable_auto_report_preference" type="boolean">no</item>
+          <item name="all_data_connection_preference" type="boolean">no</item>
+          <item name="only_wifi_option" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="FOTA">
+      <function name="settings">
+        <set name="single">
+          <item name="Enable_FOTA_UI" type="boolean">yes</item>
+          <item name="Enable_Manual_Check" type="boolean">yes</item>
+          <item name="Default_Download_Wifi" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Wifihotspot">
+      <function name="usermanagement">
+        <set name="plenty" max="15">
+          <item name="max_connection">8</item>
+          <item name="connection_array">8</item>
+        </set>
+      </function>
+    </module>
+    <module name="Drm_Provider">
+      <function name="Drm_Support">
+        <set name="single">
+          <item name="CD">no</item>
+        </set>
+      </function>
+    </module>
+    <module name="HotspotName">
+      <function>
+        <set name="single">
+          <item name="additional_string">mac_address</item>
+          <item name="additional_count">3</item>
+        </set>
+      </function>
+    </module>
+    <module name="OOBE">
+      <function name="Step_Config">
+        <set name="single">
+          <item name="Dropbox" type="boolean">no</item>
+        </set>
+      </function>
+      <function name="Location_Consent_Config">
+        <set name="single">
+          <item name="Allow_Check" type="boolean">no</item>
+        </set>
+      </function>
+      <function name="Wifi_Connectivity">
+        <set name="single">
+          <item name="Default" type="boolean">yes</item>
+        </set>
+      </function>
+      <!--%%File%%-->
+    </module>
+  </category>
+  <BootConfiguration>
+    <BootAnimation animation="/system/customize/resource/spcs_startup_animation.zip" audio="/system/customize/resource/HTC_Sense5_Boot.mp3" audiostart="android" />
+  </BootConfiguration>
+  <ShutdownConfiguration>
+    <ShutdownAnimation image_png="/system/customize/resource/spcs_shutdown_animation.zip" image="" fps="10" />
+  </ShutdownConfiguration>
+  <category name="SettingsProvider">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="def_screen_off_timeout">-2</item>
+          <item name="def_location_gps_providers_allowed">true</item>
+          <item name="def_location_network_providers_allowed">true</item>
+          <item name="def_fastboot_allowed">0</item>
+          <item name="def_htc_mobile_network_on">true</item>
+		  <item name="def_install_non_market_apps">1</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="Settings">
+    <module name="properties">
+      <function>
+        <set name="single">
+          <item name="market_name">831C</item>
+        </set>
+      </function>
+    </module>
+    <module name="list">
+      <function name="hide_application_list">
+        <set name="single">
+          <item name="1">com.lmi.htc.rescue</item>
+          <item name="2">com.lmi.htc.rescuesecurity</item>
+        </set>
+      </function>
+      <function name="unsupport_disable_button_list">
+        <set name="single">
+          <item name="0">com.sprint.dsa</item>
+          <item name="1">com.sprint.zone</item>
+          <item name="2">com.sequent.controlpanel</item>
+          <item name="3">com.coremobility.app.vnotes</item>
+          <item name="4">com.locationlabs.sparkle.yellow.pre</item>
+          <item name="5">com.sprint.w.installer</item>
+          <item name="6">com.birdstep.android.cm</item>
+          <item name="7">com.lookout</item>
+          <item name="8">com.sprint.ce.updater</item>
+          <item name="9">com.kineto.smartwifi</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="HTCCamera">
+    <module name="properties">
+      <function>
+        <set name="single">
+          <item name="mms_recording_limit">120</item>
+          <item name="enable_geo_tag_default">false</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ACC">
+    <module name="Software_Update_FOTA">
+      <function name="settings">
+        <set>
+          <item name="support_default_auto_update" type="boolean">true</item>
+          <item name="support_default_auto_update_apu" type="boolean">true</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings-Wireless_+_network-USB_tethering_">
+      <function name="settings">
+        <set>
+          <item name="usb_storage_notification" type="boolean">true</item>
+          <item name="Single_USB_tethering" type="boolean">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="Android_Core_Framework">
+      <function name="settings">
+        <set>
+          <item name="nfc_default_on" type="integer">2</item>
+        </set>
+      </function>
+    </module>
+    <module name="HTCCommonControl">
+      <function name="settings">
+        <set type="string-array" name="htcsharevia_default_order">
+          <!--0-->
+          <item>;</item>
+          <!--1-->
+          <item>com.htc.cloudstorage.skydrive</item>
+          <!--2-->
+          <item>com.dropbox.android</item>
+          <!--3-->
+          <item>com.htc.android.mail</item>
+          <!--4-->
+          <item>com.facebook.katana</item>
+          <!--5-->
+          <item>com.google.android.apps.docs</item>
+          <!--6-->
+          <item>com.htc.lucy</item>
+          <!--7-->
+          <item>com.htc.sense.mms</item>
+          <!--8-->
+          <item>;</item>
+          <!--9-->
+          <item>;</item>
+          <!--10-->
+          <item>;</item>
+          <!--11-->
+          <item>;</item>
+          <!--12-->
+          <item>com.htc.zero</item>
+        </set>
+      </function>
+    </module>
+    <module name="Android_Telephony">
+      <function name="settings">
+        <set type="string-array" name="cdma_adc_list_chameleon">
+          <item>1;Voicemail</item>
+          <item>211;Community Information</item>
+          <item>311;Non-Emergency Services</item>
+          <item>411;Directory Assistance</item>
+          <item>511;Traffic Information</item>
+          <item>611;Carrier Service Repair</item>
+          <item>711;TRS Relay for TTY</item>
+          <item>811;Call Before You Dig</item>
+          <item>911;9-1-1 Emergency</item>
+          <item>#911;9-1-1 Emergency</item>
+          <item>*911;9-1-1 Emergency</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="settings">
+        <set>
+          <item name="enable_E911_for_US_only" type="boolean">true</item>
+        </set>
+      </function>
+    </module>
+    <module name="Prism">
+      <function name="settings">
+        <set>
+          <item name="default_allapps_sort_type" type="integer">1</item>
+        </set>
+      </function>
+    </module>
+    <module name="Mail">
+      <function name="settings">
+        <set>
+          <item name="new_mail_notification_version" type="integer">1</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

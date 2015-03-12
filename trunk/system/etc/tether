@@ -1,0 +1,8 @@
+#!/system/bin/sh
+iptables -F
+iptables -A bw_FORWARD -i !lo+
+iptables -A natctrl_FORWARD -j RETURN -i rmnet+ -o wlan0 -m state --state RELATED,ESTABLISHED
+iptables -A natctrl_FORWARD -j DROP -i wlan0 -o rmnet+ -m state --state INVALID
+iptables -A natctrl_FORWARD -j RETURN -i wlan0 -o rmnet+
+iptables -A natctrl_FORWARD -j DROP
+iptables -A natctrl_nat_POSTROUTING -t nat -o rmnet+ -j MASQUERADE
