@@ -1,0 +1,93 @@
+#!/system/bin/sh
+
+################################## SQLite Optimize ##################################
+
+function optimize(){
+sql3=`busybox which sqlite3`;
+db=0;
+for i in `busybox find /data -iname "*.db"`; do
+	$sql3 $i 'VACUUM;';
+	db=`busybox expr $db + 1`;
+done;
+if [ -d "/dbdata" ]; then
+	for i in `busybox find /dbdata -iname "*.db"`; do
+		$sql3 $i 'VACUUM;';
+		db=`busybox expr $db + 1`;
+	done;
+fi;
+if [ -d "/system" ]; then
+	for i in `busybox find /system -iname "*.db"`; do
+		$sql3 $i 'VACUUM;';
+		db=`busybox expr $db + 1`;
+	done;
+fi;
+if [ -d "/datadata" ]; then
+	for i in `busybox find /datadata -iname "*.db"`; do
+		$sql3 $i 'VACUUM;';
+		db=`busybox expr $db + 1`;
+	done;
+fi;
+
+SD=`busybox mount | busybox egrep -v "asec|android_secure" | busybox egrep -i "(sdcard|sdcard0|external_sd|sdcard1)"  | busybox awk '{print $3}' `;
+
+for d in $SD; do
+for i in `busybox find $d -iname "*.db"`; do
+	$sql3 $i 'VACUUM;';
+	db=`busybox expr $db + 1`;
+done;
+done;
+busybox echo $db;
+}
+
+optimize; 
+
+################################## Zipalign /Data ####################################################
+ZIP_LOGFILE=/data/zipalign.log
+ZIPALIGNDB=/data/zipalign.db
+
+if [ -e $ZIP_LOGFILE ]; then
+	rm $ZIP_LOGFILE;
+fi;
+
+if [ ! -f $ZIPALIGNDB ]; then
+	touch $ZIPALIGNDB;
+fi;
+
+echo "Starting Automatic ZipAlign $( date +"%m-%d-%Y %H:%M:%S" )" | tee -a $ZIP_LOGFILE
+
+for DIR in /data/app ; do
+  cd $DIR
+  for APK in *.apk ; do
+    if [ $APK -ot $ZIPALIGNDB ] && [ $(grep "$DIR/$APK" $ZIPALIGNDB|wc -l) -gt 0 ] ; then
+      echo "Already checked: $DIR/$APK" | tee -a $ZIP_LOGFILE
+    else
+      zipalign -c 4 $APK
+      if [ $? -eq 0 ] ; then
+        echo "Already aligned: $DIR/$APK" | tee -a $ZIP_LOGFILE
+        grep "$DIR/$APK" $ZIPALIGNDB > /dev/null || echo $DIR/$APK >> $ZIPALIGNDB
+      else
+        echo "Now aligning: $DIR/$APK" | tee -a $ZIP_LOGFILE
+        zipalign -f 4 $APK /cache/$APK
+        busybox mount -o rw,remount /system
+        cp -f -p /cache/$APK $APK
+        busybox rm -f /cache/$APK
+        grep "$DIR/$APK" $ZIPALIGNDB > /dev/null || echo $DIR/$APK >> $ZIPALIGNDB
+      fi
+    fi
+  done
+done
+
+#Efficient Remount
+mount -o remount,noatime,nodiratime,nodelalloc,noauto_da_alloc,nodev,data=ordered,nobh,barrier=0 -t auto /system
+mount -o remount,noatime,nodiratime,nodelalloc,noauto_da_alloc,nosuid,nodev,data=ordered,nobh,barrier=0 -t auto /data
+mount -o remount,noatime,nodiratime,nodelalloc,noauto_da_alloc,nosuid,nodev,data=ordered,nobh,barrier=0 -t auto /cache
+
+#Remove Old Log
+rm /data/trim.log
+
+# fstrim and log
+fstrim -v /system >> /data/trim.log;
+fstrim -v /data >> /data/trim.log;
+fstrim -v /cache >> /data/trim.log;
+echo  "Last TRIM was on: $( date +"%m-%d-%Y %r" )" >> /data/trim.log
+

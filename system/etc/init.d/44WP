@@ -1,0 +1,6 @@
+#!/system/bin/sh
+
+#Remove WP
+insmod /system/lib/modules/wp_mod.ko
+mount -o remount,rw /system
+echo $(date) "system write enabled"
