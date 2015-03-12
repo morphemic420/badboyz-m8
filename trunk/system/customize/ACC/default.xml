@@ -200,7 +200,7 @@
   <item type="boolean" name="tethering_guard_support">false</item>
   <item type="boolean" name="tethering_roaming_specific">false</item>
   <item type="string" name="tethering_specific">NONE</item>
-  <item type="integer" name="tethering_support_ipv6">1</item>
+  <item type="integer" name="tethering_support_ipv6">7</item>
   <item type="string" name="usageCustomerWhiteList">com.htc.android.mail;com.orangelabs.rcs</item>
   <item type="string" name="usageWhiteListConifg"></item>
   <item type="boolean" name="use_default_apn">false</item>
@@ -219,7 +219,7 @@
   <item type="boolean" name="ehrpd_lte_use_same_apn_info">false</item>
   <item type="string" name="filter_apn_type_list"></item>
   <item type="string" name="fixed_apn_for_dun"></item>
-  <item type="boolean" name="global_roaming_config">true</item>
+  <item type="boolean" name="global_roaming_config">false</item>
   <item type="string" name="ignore_dns_check_mcc_list">460</item>
   <item type="boolean" name="isSingleSimDualSignalTdscdma">false</item>
   <item type="boolean" name="mccmnc_get_from_apn_property">false</item>
@@ -232,7 +232,7 @@
   <item type="boolean" name="set_preferred_apn_by_default">false</item>
   <item type="boolean" name="skip_generic_roaming_guard">true</item>
   <item type="boolean" name="support_cw">false</item>
-  <item type="boolean" name="support_eu_data_roaming">true</item>
+  <item type="boolean" name="support_eu_data_roaming">false</item>
   <item type="boolean" name="support_fixed_cdma_dns">false</item>
   <item type="boolean" name="support_lte_preferred_apn">false</item>
   <item type="boolean" name="support_ril_phonemode_change_for_td">false</item>
@@ -744,7 +744,7 @@
   <item type="boolean" name="enableHearingAidsGsm">true</item>
   <item type="boolean" name="enableUpdateAttrPsensorStatusHandsFree">false</item>
   <item type="boolean" name="fdnDisabled">false</item>
-  <item type="boolean" name="featureCdmaApnSettings">false</item>
+  <item type="boolean" name="featureCdmaApnSettings">true</item>
   <item type="boolean" name="featureCdmaCallForwarding">false</item>
   <item type="boolean" name="featureCdmaCallWaiting">false</item>
   <item type="boolean" name="featureCdmaLteApnSettings">true</item>
@@ -752,7 +752,7 @@
   <item type="boolean" name="featureCdmaPreferredRoaming">true</item>
   <item type="boolean" name="featureCDMATtyMode">true</item>
   <item type="boolean" name="featureDataWaringBootUp">false</item>
-  <item type="boolean" name="featureGlobalRoamingOptions">true</item>
+  <item type="boolean" name="featureGlobalRoamingOptions">false</item>
   <item type="boolean" name="featureGSMTtyMode">true</item>
   <item type="boolean" name="featureHttpRedirect">false</item>
   <item type="boolean" name="featureNotLogEmergencyNumber">false</item>
@@ -819,8 +819,6 @@
   <item type="boolean" name="apn_display_ppp_number_data_bearer">false</item>
   <item type="boolean" name="apn_force_hide_bearer">false</item>
   <item type="boolean" name="apn_force_hide_protocol">false</item>
-  <item type="string-array" name="appinfo_force_stop_block_list">
-  </item>
   <item type="string" name="customize_settings_voice_assistant">NULL</item>
   <item type="boolean" name="default_always_scan_wifi_settings">false</item>
   <item type="boolean" name="disable_sim_pin_ui">true</item>
@@ -1025,7 +1023,7 @@
   <item type="integer" name="chipset">1</item>
   <item type="integer" name="device_type">1</item>
   <item type="integer" name="dual_sim_device_data_type">0</item>
-  <item type="string" name="extra_sense_version">7.0</item>
+  <item type="string" name="extra_sense_version">6.0</item>
   <item type="boolean" name="feature_auto_sim_switch">false</item>
   <item type="boolean" name="for_nel">false</item>
   <item type="boolean" name="front_flashlight">false</item>
@@ -1047,10 +1045,10 @@
     <string>albumeffect_enable:1</string>
   </item>
   <item type="boolean" name="isidda_device">false</item>
-  <item type="string" name="original_sense_version">7.0</item>
+  <item type="string" name="original_sense_version">6.0</item>
   <item type="integer" name="radio_type">8</item>
   <item type="integer" name="region">1</item>
-  <item type="string" name="sense_version">7.0</item>
+  <item type="string" name="sense_version">6.0</item>
   <item type="boolean" name="single_modem_dsda_device">false</item>
   <item type="integer" name="sku_id">10</item>
   <item type="integer" name="sub_sku_id">0</item>
