@@ -418,6 +418,6 @@ updateme.disableinstalledapps=0
 updateme.disablescripts=1
 
 #ROMdb
-ro.romdb.hash=2775ca690c317493222e515f16f3542e7ecffcf144d6561f1444b47e01977cc2
-ro.romdb.version=10
+ro.romdb.hash=083ee94b7cfb64e28c376dad36109d6b42eea81c51676813467c575c909dfcf0
+ro.romdb.version=1
 ro.romdb.autosubscribe=y
