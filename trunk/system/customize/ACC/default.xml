@@ -153,7 +153,7 @@
   <item type="boolean" name="support_camera_enforce_shuttersound">false</item>
   <item type="boolean" name="support_customer_proxy">true</item>
   <item type="boolean" name="support_customization_fallback">false</item>
-  <item type="boolean" name="support_harman">true</item>
+  <item type="boolean" name="support_harman">false</item>
   <item type="boolean" name="support_miit_request">false</item>
   <item type="boolean" name="support_music_ringtone">false</item>
   <item type="boolean" name="support_outdoor_mode">false</item>
@@ -1023,7 +1023,7 @@
   <item type="integer" name="chipset">1</item>
   <item type="integer" name="device_type">1</item>
   <item type="integer" name="dual_sim_device_data_type">0</item>
-  <item type="string" name="extra_sense_version">6.0</item>
+  <item type="string" name="extra_sense_version">7.0</item>
   <item type="boolean" name="feature_auto_sim_switch">false</item>
   <item type="boolean" name="for_nel">false</item>
   <item type="boolean" name="front_flashlight">false</item>
@@ -1045,16 +1045,16 @@
     <string>albumeffect_enable:1</string>
   </item>
   <item type="boolean" name="isidda_device">false</item>
-  <item type="string" name="original_sense_version">6.0</item>
+  <item type="string" name="original_sense_version">7.0</item>
   <item type="integer" name="radio_type">8</item>
   <item type="integer" name="region">1</item>
-  <item type="string" name="sense_version">6.0</item>
+  <item type="string" name="sense_version">7.0</item>
   <item type="boolean" name="single_modem_dsda_device">false</item>
   <item type="integer" name="sku_id">10</item>
   <item type="integer" name="sub_sku_id">0</item>
   <item type="boolean" name="support_3lm">false</item>
   <item type="boolean" name="support_beats_audio">false</item>
-  <item type="boolean" name="support_boomsound_effect">false</item>
+  <item type="boolean" name="support_boomsound_effect">true</item>
   <item type="boolean" name="support_cb_on_dual">false</item>
   <item type="boolean" name="support_dlna">true</item>
   <item type="boolean" name="support_dual_sim">false</item>
