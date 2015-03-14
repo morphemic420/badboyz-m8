@@ -95,8 +95,8 @@
     <module name="FOTA">
       <function name="settings">
         <set name="single">
-          <item name="Enable_FOTA_UI" type="boolean">yes</item>
-          <item name="Enable_Manual_Check" type="boolean">yes</item>
+          <item name="Enable_FOTA_UI" type="boolean">no</item>
+          <item name="Enable_Manual_Check" type="boolean">no</item>
           <item name="Default_Download_Wifi" type="boolean">yes</item>
         </set>
       </function>
@@ -208,8 +208,8 @@
     <module name="Software_Update_FOTA">
       <function name="settings">
         <set>
-          <item name="support_default_auto_update" type="boolean">true</item>
-          <item name="support_default_auto_update_apu" type="boolean">true</item>
+          <item name="support_default_auto_update" type="boolean">false</item>
+          <item name="support_default_auto_update_apu" type="boolean">false</item>
         </set>
       </function>
     </module>
