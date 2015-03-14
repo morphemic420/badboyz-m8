@@ -522,35 +522,6 @@
     <string>;</string>
     <string>com.htc.zero</string>
   </item>
-  <item type="string-array" name="htctheme_list">
-	<string>GRE00</string>
-	    <string>0</string>
-	    <string>wallpapers_00.jpg</string>
-	    <string>ORG00</string>
-	    <string>1</string>
-	    <string>wallpapers_01.jpg</string>
-	    <string>HTC00</string>
-	    <string>2</string>
-	    <string>wallpapers_02.jpg</string>
-	    <string>GRY01</string>
-	    <string>3</string>
-	    <string>wallpapers_03.jpg</string>
-	    <string>BLU00</string>
-	    <string>4</string>
-	    <string>wallpapers_16.jpg</string>
-	    <string>GRY00</string>
-	    <string>5</string>
-	    <string>wallpapers_18.jpg</string>
-	    <string>PNK00</string>
-	    <string>6</string>
-	    <string>wallpapers_07.jpg</string>
-	    <string>BLU01</string>
-	    <string>7</string>
-	    <string>wallpapers_12.jpg</string>
-	    <string>RED00</string>
-	    <string>8</string>
-	    <string>wallpapers_15.jpg</string> 
-  </item>
 </app>
 <app name="HtcContacts">
   <item type="boolean" name="enable_edit_before_call">false</item>
@@ -985,21 +956,6 @@
 </app>
 <app name="Tethering_provision">
   <item type="integer" name="TetheringGuard_Rule">0</item>
-</app>
-<app name="ThemeSelector">
-  <item type="string-array" name="cmf_theme_color">
-    <string>cc=GOD00:wp=wallpapers_07.jpg:c1=#857663:c2=#73a1ae:c3=#8c7f6f:c4=#46413d:c1k=#4c4439:c2k=#405361:c3k=#403b35:c4k=#292522:c1l=#f4bd56:c2l=#96f2ef:c3l=#ffb661:c4l=#ffb661:d1=#857663:d2=#73a1ae:d3=#8c7f6f:d4=#46413d</string>
-  </item>
-  <item type="string-array" name="default_theme_color">
-    <string>id=com.htc.theme.tcceac82e-953e-43df-bdac-cbb094435004:title=Pastorale:c1=#334932:c2=#f16125:c3=#637a46:c4=#00b79f:c1k=#1e402b:c2k=#b4481b:c3k=#4d6136:c4k=#028b78:c1l=#d8b827:c2l=#b4481b:c3l=#f16125:c4l=#d8b827:d1=#334932:d2=#f16125:d3=#637a46:d4=#00b79f</string>
-    <string>id=com.htc.theme.t1e4578e0-0df4-4c4f-8941-4df7511459fd:title=Numéro:c1=#7fd3c4:c2=#f68b9f:c3=#bdbcb9:c4=#a4a4a1:c1k=#72bdb0:c2k=#c86579:c3k=#b2b0ae:c4k=#959492:c1l=#f68b9f:c2l=#7fd3c4:c3l=#7fd3c4:c4l=#7fd3c4:d1=#7fd3c4:d2=#f68b9f:d3=#bdbcb9:d4=#a4a4a1</string>
-    <string>id=com.htc.theme.tc5962215-448b-47ad-8428-dab9ce38e070:title=Innerspace:c1=#58c9a5:c2=#29c7d3:c3=#5d3d7f:c4=#f8bd1f:c1k=#2d9476:c2k=#24949e:c3k=#452b61:c4k=#bb911e:c1l=#71ffd2:c2l=#252e42:c3l=#d9e021:c4l=#29c7d3:d1=#58c9a5:d2=#29c7d3:d3=#5d3d7f:d4=#f8bd1f</string>
-    <string>id=com.htc.theme.ta02d84bb-bff9-4d74-8c5c-396e29c27067:title=Traction:c1=#f44336:c2=#f44336:c3=#f44336:c4=#f44336:c1k=#411310:c2k=#411310:c3k=#411310:c4k=#411310:c1l=#ff5e52:c2l=#ff5e52:c3l=#ff5e52:c4l=#ff5e52:d1=#f44336:d2=#411310:d3=#9c2820:d4=#ff5e52</string>
-    <string>id=com.htc.theme.t4958e5c8-4a86-4d2f-8ad7-a491a790b18d:title=Tilt:c1=#1f1e20:c2=#1f1e20:c3=#1f1e20:c4=#1f1e20:c1k=#0c0c0d:c2k=#0c0c0d:c3k=#0c0c0d:c4k=#0c0c0d:c1l=#188df2:c2l=#188df2:c3l=#188df2:c4l=#188df2:d1=#0c0c0d:d2=#1f1e20:d3=#404040:d4=#188df2</string>
-    <string>id=com.htc.theme.td77bd697-2811-482e-961f-e65cbdffdf65:title=Nimbus:c1=#a6744b:c2=#a6744b:c3=#a6744b:c4=#a6744b:c1k=#4d3522:c2k=#4d3522:c3k=#4d3522:c4k=#4d3522:c1l=#ffb273:c2l=#ffb273:c3l=#ffb273:c4l=#ffb273:d1=#a6744b:d2=#4d3522:d3=#8f6542:d4=#ffb273</string>
-    <string>id=com.htc.theme.tb930c680-2eae-47da-909f-992e4f061056:title=Origami:c1=#0096b6:c2=#3bd8b9:c3=#d2916e:c4=#f55732:c1k=#006a81:c2k=#44967c:c3k=#a66342:c4k=#bb5841:c1l=#f55732:c2l=#f55732:c3l=#3bd8b9:c4l=#0096b6:d1=#0096b6:d2=#3bd8b9:d3=#d2916e:d4=#f55732</string>
-    <string>id=com.htc.theme.t51edf118-cfb9-465d-b1e4-d650534b8e9c:title=Cascadia:c1=#273e81:c2=#20a9ff:c3=#4e3fdf:c4=#7f2085:c1k=#101936:c2k=#146699:c3k=#2a2278:c4k=#49124d:c1l=#4d79ff:c2l=#fff776:c3l=#41dce8:c4l=#f665ff:d1=#273e81:d2=#20a9ff:d3=#4e3fdf:d4=#7f2085</string>
-  </item>
 </app>
 <app name="TMOUS_IMS">
   <item type="boolean" name="enable_wifi_ims">false</item>
