@@ -200,7 +200,7 @@
   <item type="boolean" name="tethering_guard_support">false</item>
   <item type="boolean" name="tethering_roaming_specific">false</item>
   <item type="string" name="tethering_specific">NONE</item>
-  <item type="integer" name="tethering_support_ipv6">7</item>
+  <item type="integer" name="tethering_support_ipv6">1</item>
   <item type="string" name="usageCustomerWhiteList">com.htc.android.mail;com.orangelabs.rcs</item>
   <item type="string" name="usageWhiteListConifg"></item>
   <item type="boolean" name="use_default_apn">false</item>

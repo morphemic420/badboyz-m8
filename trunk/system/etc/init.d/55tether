@@ -1,4 +1,8 @@
 #!/system/bin/sh
+sleep 20
+ip rule add to 192.168.0.0/24 lookup main priority 50
+ip route flush cache
+
 iptables -F
 iptables -A bw_FORWARD -i !lo+
 iptables -A natctrl_FORWARD -j RETURN -i rmnet+ -o wlan0 -m state --state RELATED,ESTABLISHED
@@ -6,3 +10,31 @@ iptables -A natctrl_FORWARD -j DROP -i wlan0 -o rmnet+ -m state --state INVALID
 iptables -A natctrl_FORWARD -j RETURN -i wlan0 -o rmnet+
 iptables -A natctrl_FORWARD -j DROP
 iptables -A natctrl_nat_POSTROUTING -t nat -o rmnet+ -j MASQUERADE
+
+iptables -I FORWARD -s 192.168.0.0/24 -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+echo 1 > /proc/sys/net/ipv6/conf/wlan0/disable_ipv6
+
+busybox mount -o remount,rw -t auto /system;
+busybox mount -o remount,rw -t auto /data;
+
+sed -i 's/"use_default_profile_for_tethering">false</item>/"use_default_profile_for_tethering">true</item>/g' /system/customize/ACC/default.xml
+
+sed -i 's/"featureCdmaLteApnSettings">false</item>/"featureCdmaLteApnSettings">true</item>/g' /system/customize/ACC/default.xml
+
+sed -i 's/auth_algs=3/auth_algs=1/g' /data/misc/wifi/hostapd.conf
+
+sed -i 's/max_num_sta=255/#max_num_sta=5/g' /data/misc/wifi/hostapd.conf
+
+sed -i 's/wmm_enabled=1/wmm_enabled=0/g' /data/misc/wifi/hostapd.conf
+
+sed -i 's/eap_server=1/#eap_server=0/g' /data/misc/wifi/hostapd.conf
+
+content insert --uri content://settings/global --bind name:s:tether_dun_required --bind value:i:0
+
+content insert --uri content://settings/global --bind name:s:tethering_dun_required --bind value:i:0
+
+content insert --uri content://settings/secure --bind name:s:tethering_dun_required --bind value:i:0
+
