@@ -1033,7 +1033,7 @@
   <item type="boolean" name="support_hide_select_runtime">false</item>
   <item type="boolean" name="support_ir">true</item>
   <item type="boolean" name="support_lte">true</item>
-  <item type="boolean" name="support_music_channel">true</item>
+  <item type="boolean" name="support_music_channel">flase</item>
   <item type="boolean" name="support_sim_card">true</item>
   <item type="boolean" name="support_vmware">false</item>
   <item type="string" name="support_volte">false</item>
